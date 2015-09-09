@@ -4,7 +4,7 @@ div.image-overlay
     position: relative;
 }
 
-div.image-overlay:before
+div.image-overlay::before
 {
 	/* set how dark you want the overlay to be */
     background: rgba(0,0,0,.2);
