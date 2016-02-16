@@ -1,0 +1,12 @@
+/*
+ * Always center modal.
+ * Taken from an awesome post by Lynn Wallenstein: http://lynn.io/2014/02/22/modalin/
+ */
+
+.modal {
+	left: 50%;
+	max-height: calc(100% - 100px);
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
