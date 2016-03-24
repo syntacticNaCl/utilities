@@ -1,0 +1,27 @@
+/* Image with dark overlay and hover. */
+div.image-overlay {
+	position: relative;
+}
+
+div.image-overlay::after {
+	content: '\A';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 0.7;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+
+div.image-overlay:hover::after {
+	opacity: 1; 
+}
+
+/* image */
+div.image-overlay img {
+	width: 100%;
+	vertical-align: top;
+}
